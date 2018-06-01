@@ -7,7 +7,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CareersComponent } from './careers/careers.component';
 import { MediaComponent } from './media/media.component';
 import { InfrastructureAndFacilityComponent } from './infrastructure-and-facility/infrastructure-and-facility.component'
-
+import { ProductsComponent } from './products/products.component';
+import { MulchFilmsComponent } from './mulch-films/mulch-films.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 export const routes: Routes = [
   {
     path: '',
@@ -37,6 +39,19 @@ export const routes: Routes = [
   {
     path: 'infrastructure-and-facilities',
     component : InfrastructureAndFacilityComponent
+  },
+  {
+    path: 'products',
+    component : ProductsComponent
+  },
+  {
+    path: 'products/mulch-films',
+    component : MulchFilmsComponent
+  }
+  ,
+  {
+    path: 'products/mulch-films/product-details',
+    component : ProductDetailsComponent
   }
 ];
 

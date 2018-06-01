@@ -13,6 +13,9 @@ import { CareersComponent } from './careers/careers.component';
 import { MediaComponent } from './media/media.component';
 import { routes } from './app.routing';
 import { InfrastructureAndFacilityComponent } from './infrastructure-and-facility/infrastructure-and-facility.component';
+import { ProductsComponent } from './products/products.component';
+import { MulchFilmsComponent } from './mulch-films/mulch-films.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { InfrastructureAndFacilityComponent } from './infrastructure-and-facilit
     ContactUsComponent,
     CareersComponent,
     MediaComponent,
-    InfrastructureAndFacilityComponent
+    InfrastructureAndFacilityComponent,
+    ProductsComponent,
+    MulchFilmsComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
