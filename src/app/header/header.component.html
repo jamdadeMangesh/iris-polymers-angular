@@ -28,14 +28,14 @@
             
            <ul class="nav navbar-nav navbar-center roboto-l" data-in="fadeInDown" data-out="fadeOutUp">
 
-                <li><a routerLink="/home" routerLinkActive="active" class="mactive">Home</a></li> 
+                <li routerLinkActive="active"><a routerLink="/home" class="mactive">Home</a></li> 
 
-                <li class="dropdown">
-                    <a routerLink="/about" routerLinkActive="active" class="dropdown-toggle mactive" data-toggle="dropdown" >About Us</a>
+                <li class="dropdown" routerLinkActive="active">
+                    <a routerLink="/about" class="dropdown-toggle mactive" data-toggle="dropdown" >About Us</a>
                     <ul class="dropdown-menu">
-                        <li class="scroll"><a href="about-us.php#corporate-philosophy">Corporate Philosophy</a></li>
-                        <li class="scroll"><a href="about-us.php#awards">Our Awards</a></li>
-                        <li class="scroll"><a href="about-us.php#our-team">Our Team</a></li>
+                        <li class="scroll"><a routerLink="about" fragment="corporate-philosophy">Corporate Philosophy</a></li>
+                        <li class="scroll"><a routerLink="about" fragment="awards">Our Awards</a></li>
+                        <li class="scroll"><a routerLink="about" fragment="our-team">Our Team</a></li>
                     </ul>
                 </li> 
 
@@ -51,22 +51,22 @@
                     </ul>
                 </li>
 
-                <li class="dropdown">
-                    <a href="infrastructure-facilities.php" class="dropdown-toggle mactive" data-toggle="dropdown" >Infrastructure & Facilities</a>
+                <li class="dropdown" routerLinkActive="active">
+                    <a routerLink="/infrastructure-and-facilities" class="dropdown-toggle mactive" data-toggle="dropdown" >Infrastructure & Facilities</a>
                     <ul class="dropdown-menu">
-                        <li><a href="infrastructure-facilities.php#quality">Quality</a></li>
-                        <li><a href="infrastructure-facilities.php#certificate">Certificate</a></li>
-                        <li><a href="infrastructure-facilities.php#distribution-network">Distribution Network</a></li>
+                        <li><a routerLink="infrastructure-and-facilities" fragment="quality">Quality</a></li>
+                        <li><a routerLink="infrastructure-and-facilities" fragment="certificate">Certificate</a></li>
+                        <li><a routerLink="infrastructure-and-facilities" fragment="distribution-network">Distribution Network</a></li>
                     </ul>
                 </li>
                 
-                <li class="dropdown">
-                    <a href="media.php" class="dropdown-toggle mactive" data-toggle="dropdown" >Media</a>
+                <li class="dropdown" routerLinkActive="active">
+                    <a routerLink="/media" class="dropdown-toggle mactive" data-toggle="dropdown" >Media</a>
                     <ul class="dropdown-menu">
-                        <li><a href="media.php#exhibition">Exhibition</a></li>
+                        <li><a routerLink="/media" fragment="exhibition">Exhibition</a></li>
                         <!--<li><a href="media.php#merger-acquisition">Merger and Acquisition</a></li>
                         <li><a href="media.php#blogs"> Blogs In newspaper / Magazine</a></li>-->
-                        <li><a href="media.php#video">Company Video</a></li>
+                        <li><a routerLink="/media" fragment="video">Company Video</a></li>
                     </ul>
                 </li>                
                 <!--<li class="dropdown">
@@ -76,8 +76,8 @@
                         <li><a href="#">International</a></li>
                     </ul>
                 </li>-->
-                <li><a href="careers.php" class="mactive">Careers</a></li>
-                <li><a href="contact-us.php" class="mactive">Contact Us</a></li>
+                <li routerLinkActive="active"><a routerLink="/careers" class="mactive">Careers</a></li>
+                <li  routerLinkActive="active" ><a routerLink="/contact-us" class="mactive">Contact Us</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div>   

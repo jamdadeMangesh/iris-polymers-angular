@@ -230,28 +230,28 @@
     <div class="container  text-center">    
         <div class="row text-center">
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <img src="images/proj_complete.png" class="img-responsive counter_img" alt="Project Completed" /><br /><br />
+                <img src="assets/images/proj_complete.png" class="img-responsive counter_img" alt="Project Completed" /><br /><br />
                 <div id="counter">
                     <div class="Count arvo">2345</div><span class="other_span"> +</span>
                 </div>
                 <p class="roboto-l counter_text">Project Completed</p>
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <img src="images/team_strength.png" class="img-responsive counter_img" alt="Team Strength" /><br /><br />
+                <img src="assets/images/team_strength.png" class="img-responsive counter_img" alt="Team Strength" /><br /><br />
                 <div id="counter">
                     <div class="Count arvo">150</div><span class="other_span"> +</span>
                 </div>
                 <p class="roboto-l counter_text">Team Strength</p>
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <img src="images/awards.png" class="img-responsive counter_img" alt="Awards" /><br /><br />
+                <img src="assets/images/awards.png" class="img-responsive counter_img" alt="Awards" /><br /><br />
                 <div id="counter">
                     <div class="Count arvo">15</div><span class="other_span"> +</span>
                 </div>
                 <p class="roboto-l counter_text">Winning Awards</p>
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3">
-                <img src="images/concepts.png" class="img-responsive counter_img" alt="Concepts" /><br /><br />
+                <img src="assets/images/concepts.png" class="img-responsive counter_img" alt="Concepts" /><br /><br />
                 <div id="counter">
                     <div class="Count arvo">215</div><span class="other_span"> +</span>
                 </div>
@@ -261,73 +261,3 @@
     </div>
 </div>
 
-<script>
-   $('.why_best_list').hover(function() {
-        $(".checkSrc").each(function(e){
-            $(this).attr("src",$(this).attr("normal-src"))
-        })
-
-        $(this).find("img").attr("src",$(this).find("img").attr("white-src"));
-    });
-
-    $('.why_best_list').mouseleave(function() {
-        $(".checkSrc").each(function(e){
-            $(this).attr("src",$(this).attr("normal-src"))
-        })
-    });
-</script>
-
-
-
-
-<script>
-$(document).ready(function() {
-  $('.clients-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    navText : ["<img src='images/left_arrow.png' class='img-responsive'>","<img src='images/right_arrow.png' class='img-responsive'>"],    
-    responsive: {
-      0: {
-        items: 1,
-        nav: true
-      },
-      600: {
-        items: 1,
-        nav: false
-      },
-      1000: {
-        items: 1,
-        nav: true,
-        loop: true,
-        margin: 20
-      }
-    }
-  })
-})
-</script>
-
-<script>
-var a = 0;
-$(window).scroll(function() {
-
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-   $('.Count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 3000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});
-    a = 1;
-  }
-
-});
-
-
-</script>
